@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* nevbar css */
+#navbar{
+    top: 0%;
+    display: flex;
+    justify-content: flex-start;
+    position: sticky;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+    align-items: center;
+}
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    text-decoration: none;
+}
+/* hover properties */
+#navbar::before{
+    content: "";
+    background-color: wheat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url("../food-demo-website/img/bg1.jpg") no-repeat center center/cover;
+    border-radius: 0px 0px 20px 20px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+/* Hover properties */
+#navbar ul li a:hover{
+    color: white;
+    background-color: black;
+}
+
+/* home section */
+#home{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 500px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 5.0rem;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.0rem;
+}
+/* menu section */
+#menu-container{
+    margin: 20px 0px 0px 0px;
+}
+#menu{
+    margin: 0px;
+    display: flex;
+   justify-content: center;
+}
+#menu .box{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 30px 30px;
+    border-radius: 20px;
+}
+#menu .box img{
+    display: block;
+    margin: auto;
+    height: 160px;
+}
+#menu .box p{
+    font-size: 1rem;
+}
+/* about us section */
+#aboutus{
+    background-color: black;
+    border-radius: 20px 20px 0 0;
+    color: white;
+    padding: 0 0 20px 0;
+}
+.aboutcenter{
+    text-align: center;
+}
+/* utility properties */
+.h-pri{
+    font-size: 2.5rem;
+}
+.h-sec{
+    font-size: 1.5rem;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: wheat;
+    color: black;
+    margin: 35px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    margin: 10px;
+    text-align: center;
+}

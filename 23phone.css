@@ -1,0 +1,47 @@
+#navbar{
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+#navbar ul li a{
+    font-size: 0.9rem;
+    padding: 0 7px;
+}
+#home {
+    height: 370px;
+    padding: 3px 68px; 
+}
+#home::before{
+    height: 480px;
+}
+#home p{
+    font-size: 13px;
+}
+#menu{
+    flex-direction: column;
+    /* height: 100%; */
+}
+#menu .box{
+    padding: 14px;
+    margin: 2px 15px;
+    margin-bottom: 20px;
+}
+
+.front::before{
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    border-radius: 50%;
+    background: #f05454;
+    width: 50px;
+    height: 50px;
+}
+
+.h-pri{
+    margin-top: 50px;
+    font-size: 25px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
